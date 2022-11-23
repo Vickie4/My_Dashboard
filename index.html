@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.google apis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/icon.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Santos Dashboard</title>
+</head>
+<body>
+    <div class="dashboard" ><!--Dashboard-->
+        <section class="navigation">  <!-- Navigation start -->
+            <div class="bar">
+                <div class="logos">
+                   <img src="asset/img/Instincthub logo.png" alt="Instincthub Logo" class="logo"> 
+                </div>
+                <div class="nav">
+                    <div class="material"><span class="material_icon"><img src="asset/img/bx_bxs-dashboard.png" alt="Overview"></span><p>Overview</p>
+                    </div> 
+                    <div class="material"><span class="material_icon"><img src="asset/img/akar-icons_file.png" alt="Classes"></span> <p>Classes</p>
+                    </div> 
+                    <div class="material"><span class="material_icon"><img src="asset/img/codicon_graph.png" alt="Analytics"> </span><p>Analytics</p>
+                    </div>
+                    <div class="material"><span class="material_icon"><img src="asset/img/ic_baseline-group.png" alt="Community"> </span><p>Community</p>
+                    </div>
+                    <div class="material"><span class="material_icon"><img src="asset/img/fe_logout.png" alt="Logout"></span><p>Logout</p>
+                    </div>
+                </div> 
+            </div>
+            
+            <div class="upgrades">
+                <img src="asset/img/Upgrade illustration.png" alt="Upgrade" class="upgrade_box">
+                <p>Upgrade your student portal account</p>
+                <button class="button">Upgrade</button>
+            </div>
+        </section><!-- Navigation end -->
+        <section class="main"><!-- Main start -->
+            <div class="search"><!-- Search start -->
+                <h2>My course dashboard</h2>
+                <form action="">
+                    <input type="text" name="search" id="search" placeholder="You are looking for...">
+                    <span class="material-icon"><img src="asset/img/bx_bx-search.png" alt="search"></span>
+                </form>
+                <div>
+                    <span class="material_icon1"><img src="asset/img/codicon_bell-dot.png" alt="Notification"></span>
+                    <span class="material_icon2"><img src="asset/img/User profile.png" alt="User profile"></span>
+                </div>
+            </div><!--Search end  -->
+            <div class="chart"><!--chart start  -->
+                <span><canvas id="myChart" style="height: 200px;"></canvas>
+                <p><b>Daily</b> Activities</p></span>   
+                <span><canvas id="myChart2" width="400" height="400"></canvas>
+                <p><b>Monthly</b> Activities</p></span>
+                <span><canvas id="myChart3" width="400" height="400"></canvas><p><b>Yearly</b> Activities</p></span>
+            </div><!-- Chart end -->
+            <div class="table_wrapper" style="overflow-x: auto;"><!--Table wrapper start  -->
+                <table class="tables">
+                    <tr>
+                        <th>No</th>
+                        <th>Course Name</th>
+                        <th>Department</th>
+                        <th>Unit</th>
+                        <th>Gpa</th>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>Tax Academy Introduction</td>
+                        <td>Finances</td>
+                        <td>3</td>
+                        <td>4.3/5</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Transfer Pricing</td>
+                        <td>Customer Service</td>
+                        <td>3</td>
+                        <td>4.3/5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Tax Academy for Beginners</td>
+                        <td>Purchasing</td>
+                        <td>3</td>
+                        <td>4.3/5</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>New Business</td>
+                        <td>Finances</td>
+                        <td>3</td>
+                        <td>3.0/5</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Tax Accounting</td>
+                        <td>Administration</td>
+                        <td>8</td>
+                        <td>4.7/5</td> 
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Motion Design</td>
+                        <td>IT Dep</td>
+                        <td>6</td>
+                        <td>4.4/5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>3D Modeling</td>
+                        <td>IT Dep</td>
+                        <td>3</td>
+                        <td>3.0/5</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Brand Strategy on Instagram</td>
+                        <td>Marketing</td>
+                        <td>3</td>
+                        <td>4.7/5</td>
+                    </tr>
+                </table> 
+            </div><!--Table wraapper end  -->
+
+            <div class="foot_wrappers"><!--foot wrapper start  -->
+                <div class="note">
+                    <h1>When nothing goes right, go left</h1>
+                    <p>Build your skills with courses and degree online from anywhere with professional instructors</p>
+                    <button class="button">Learn more</button>
+                </div>
+                <img src="asset/img/female image.png" alt="" class="logo">
+            </div><!-- foot wrapper end -->
+        </section><!--Main end -->
+    </div> <!--Dashboard end  -->
+    
+
+    <script>
+        //first start
+        //setup block
+        const data = {
+        //    labels: ['Red', 'Blue'],
+                datasets: [{
+                    label: 'Activities',
+                    data: [255.6, 104.4],
+                    backgroundColor: [
+                        '#BC658D',
+                        'teal',
+                    ], 
+                    borderWidth: 0,
+                    cutout: '90%'
+                }]
+        };
+
+        //counter plugin block
+        const counter = {
+            id: 'counter',
+            beforeDraw( chart, args, options ) {
+                const { ctx, chartArea: { top, right, bottom, left, width, height} } = chart
+                  ;
+                ctx.save();
+
+                ctx.font= '60px sans-serif'
+                ctx.textAlign = 'center'
+                ctx.fillStyle = 'black';
+                ctx.fillText('71%', width / 2 , top + (height / 2));
+
+            }
+        };
+
+        //config block
+        const config = {
+            type: 'doughnut',
+            data,
+            option: {},
+            plugins: [counter]
+        };
+
+        //render init block
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+        //first end
+       
+        //second start
+
+        const data2 = {
+        //    labels: ['Red', 'Blue'],
+                datasets: [{
+                    label: 'Activities',
+                    data: [72, 288],
+                    backgroundColor: [
+                        '#BC658D',
+                        'teal',
+                    ], 
+                    borderWidth: 0,
+                    cutout: '90%'
+                }]
+        };
+
+         //counter plugin block
+         const counter2= {
+            id: 'counter2',
+            beforeDraw( chart, args, options ) {
+                const { ctx, chartArea: { top, right, bottom, left, width, height} } = chart
+                  ;
+                ctx.save();
+
+                ctx.font= '60px sans-serif'
+                ctx.textAlign = 'center'
+                ctx.fillStyle = 'black';
+                ctx.fillText('20%', width / 2 , top + (height / 2));
+
+            }
+        };
+
+        //config block
+        const config2 = {
+            type: 'doughnut',
+            data: data2,
+            option: {},
+            plugins: [counter2]
+        };
+
+        //render init block
+        const myChart2 = new Chart(
+            document.getElementById('myChart2'),
+            config2
+        );
+        //second end
+
+        //third start
+        const data3 = {
+        //    labels: ['Red', 'Blue'],
+                datasets: [{
+                    label: 'Activities',
+                    data: [43.2, 316.8],
+                    backgroundColor: [
+                        '#BC658D',
+                        'teal',
+                    ], 
+                    borderWidth: 0,
+                    cutout: '90%'
+                }]
+        };
+
+         //counter plugin block
+         const counter3 = {
+            id: 'counter3',
+            beforeDraw( chart, args, options ) {
+                const { ctx, chartArea: { top, right, bottom, left, width, height} } = chart
+                  ;
+                ctx.save();
+
+                ctx.font= '60px sans-serif'
+                ctx.textAlign = 'center'
+                ctx.fillStyle = 'black';
+                ctx.fillText('12%', width / 2 , top + (height / 2));
+
+            }
+        };
+    
+        //config block
+        const config3 = {
+            type: 'doughnut',
+            data: data3,
+            option: {},
+            plugins: [counter3]
+        };
+
+        //render init block
+        const myChart3 = new Chart(
+            document.getElementById('myChart3'),
+            config3
+        );
+        //third end
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,661 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(231, 231, 231); */
+}
+
+.dashboard{
+    margin: 0 auto;
+}
+
+/*===========
+navigation
+==============*/
+
+.dashboard .navigation .bar{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+    /* background-color: #fff; */
+    /* padding: 10px; */
+}
+
+.dashboard .navigation .bar .logos{
+    background-color: #fff;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+    align-items: center;
+}
+
+.dashboard .navigation .bar img.logo{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 55px; 
+    height: 10px; 
+} 
+
+
+.dashboard .navigation .nav {
+    display: flex;
+    background-color: black;
+    height: 30px;
+    width: 80%;
+}
+
+.dashboard .navigation .nav .material{
+    display: flex;
+    width: 85px;
+    align-items: center;
+    padding: 0px 0px;
+    justify-content: center;
+}
+
+.dashboard .navigation .nav .material_icon img {
+    width: 17px;
+    vertical-align: middle;
+}
+
+.dashboard .navigation .nav .material p{
+    display: none;
+    color: #fff;
+    font-size: 8px;
+}
+
+/* ==========================
+Upgrades
+============================= */
+.upgrades {
+    display: flex;
+    background-color: rgb(231, 231, 231);
+    width: 100vw;
+    height: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.dashboard .navigation img.upgrade_box{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.upgrades p {
+    font-size: 10px;
+    width: 150px;
+}
+
+.upgrades .button{
+    margin-right: 20px;
+    height: 20px;
+    border: none;
+    font-size: 10px;
+    background-color: teal;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+
+.upgrades .button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid teal; 
+}
+
+
+/* ==========================
+Main Dashboard
+============================= */
+/* Search */
+
+.main .search h2{
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.dashboard .main .search form{
+    position: relative;
+}
+
+.dashboard .main .search form input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px 10px 60px;
+    border: 1px solid #dadada;
+    border-radius: 50px;
+    background-color: rgba( 0 0 0 / 0);
+}
+.dashboard .main .search form span{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: #727272;
+}
+.dashboard .main .search div{
+    margin: 10px 15px;
+}
+
+
+.material_icon1 {
+    display: flex;
+    float: right;
+    width: 18px;
+    margin-top: 8px;
+    margin-right: 10px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+
+.dashboard .main .search div .material_icon2 img {
+    width: 50px;
+}
+
+/* chart*/
+.chart span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+    background-color: rgb(231, 231, 231);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+
+.chart span p{
+    text-align: center;
+}
+
+#myChart{
+    width: 200px !important;
+    height: 200px !important;
+    margin-right: 27px;
+}
+
+#myChart2{
+    width: 200px !important;
+    height: 200px !important;
+    margin-right: 15px;
+}
+
+#myChart3{
+    width: 200px !important;
+    height: 200px !important;
+    margin-right: 15px;
+}
+
+/* Table*/
+.table_wrapper .tables {
+    border-radius: 10px;
+    background-color: rgb(231, 231, 231);
+    margin: 0px 10px;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+    margin: 10px;
+}
+
+.table_wrapper .tables th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #000000;
+    color: white;
+}
+.table_wrapper .tables th:nth-child(1){
+    border-top-left-radius: 10px;
+}
+
+.table_wrapper .tables th:nth-child(5){
+    border-top-right-radius: 10px;
+}
+
+th, td{
+    text-align: left;
+    padding: 8px;
+}
+
+
+ /* foot_wrapper */
+.foot_wrappers{
+    margin-top: 20px;
+    background-color: #000000;
+    padding-left: 15px;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    width: 95%;
+}
+
+.foot_wrappers .note {
+    /* width: 300px; */
+    color: #fff;
+    /* margin-right: -100px; */
+}
+
+.foot_wrappers .logo{
+    margin-top: -20px;
+}
+
+.foot_wrappers img{
+    width: 100px; 
+    height: 137px; 
+    object-fit: cover; 
+    object-position: 100% 0;
+    /* width: 500px;
+    height: 100px; */
+}
+
+.foot_wrappers .note .button{
+    width: 55px;
+    height: 20px;
+    border: none;
+    font-size: 7px;
+    background-color: #fff;
+    color: #BC658D;
+    padding: 3px 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+
+/* responsiveness */
+@media only screen and (min-width: 768px){
+    body{
+        background:rgb(231, 231, 231);
+    }
+    section.dashboard .navigation{
+        position: fixed;
+    }
+    .dashboard{
+        display: flex;
+    }
+    .dashboard .navigation{
+        background-color: #fff;
+        width: 30%;
+        box-shadow: 0px 3px 10px rgb( 90 90 90 / 10);
+    }
+    .dashboard .navigation .bar .nav, .dashboard .navigation .bar, .upgrades{
+        display: block;
+    }
+
+    .dashboard .navigation .bar img.logo{
+        width: 80%;
+        height: 80%;
+        justify-self: center;
+        margin-left: 15px;
+    }
+
+    .dashboard .navigation .bar .logos{
+        width: 90%;
+        height: 90%;
+    }
+
+    .dashboard .navigation .bar{
+        width: 30%;
+        position: fixed;
+        z-index: 10;
+        margin-top: 20px;
+    }
+
+    .dashboard .navigation .bar .nav{
+        height: fit-content;
+        margin-top: 120px;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .dashboard .navigation .nav .material_icon img{
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .dashboard .navigation .nav .material p{
+        display: flex;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .dashboard .navigation .bar .nav .material{
+        margin-bottom: 15px;
+        background-color: #000000;
+        width: auto;
+        height: 80px;
+    }
+   
+    .upgrades{
+        width: 25%;
+        margin-left: 15px;
+        margin-top: 680px;
+        height: 300px;
+        position: fixed;
+    }
+
+    .upgrades p {
+        font-size: 20px;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .dashboard .navigation img.upgrade_box{
+        width: 70%;
+        height: 50%;
+    }
+
+    .upgrades .button {
+        width: 80%;
+        height: 30px;
+        font-size: 16px;
+        margin-right: 0px;
+    }
+
+    .main .search /*h2 */{
+        background-color: #fff;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 50%);
+        margin-bottom: 50px;
+    }
+
+    .main .search h2{
+        margin: 0;
+        padding: 15px 0px 20px 20px;
+    }
+
+    .dashboard .main .search form input{
+        border: 1px solid #888888;
+        width: 95%;
+    }
+
+    .chart span{
+        background-color: #fff;
+    }
+    .foot_wrappers{
+        width: 500px;
+        height: 220px;
+    }
+
+    .foot_wrappers .note .button {
+        width: 70%;
+        height: 35px;
+        font-size: 18px;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+    .table_wrapper .tables{
+        margin: 20px;
+        background-color: #fff;
+    }
+    .dashboard .main .search form{
+        margin-left: 20px;
+    }
+    .dashboard .main .search div {
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+    .dashboard .navigation .bar img.logo{
+        margin-left: 35px;
+    }
+    .upgrades {
+        margin-left: 25px;
+        margin-top: 1000px;
+    }
+    .upgrades p{
+        width: 90%;
+        text-align: center;
+        margin-left: 15px;
+    }
+    section.main{
+        width: 70%;
+    }
+
+    .main .search h2{
+        font-size: 40px;
+    }
+
+    .dashboard .main .search div{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .main .search{
+        height: 230px;
+    }
+    .dashboard .navigation .bar {
+        margin-top: 35px;
+    }
+    .foot_wrappers {
+        width: 95%;
+        height: 300px;
+        margin-left: 20px;
+    }
+    .foot_wrappers img {
+        width: 300px;
+        height: 330px;
+        object-fit: cover;
+        object-position: 100% 0;
+    }
+    .foot_wrappers .logo {
+        margin-top: -30px;
+    }
+    .foot_wrappers .note .button {
+        width: 160px;
+        height: 45px;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .chart span p {
+        font-size: 22px;
+    }
+    .dashboard .navigation .nav .material p {
+        font-size: 22px;
+    }
+    .dashboard .navigation .nav .material {
+        width: 85px;
+        align-items: center;
+        padding: 0px 0px;
+        justify-content: normal;
+        padding-left: 90px;
+    }
+    .dashboard .navigation .nav .material_icon img {
+        width: 40px;
+        margin-right: 10px;
+    }
+    th, td {
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px)  {
+    .chart span p {
+        font-size: 22px;
+        padding: 30px;
+        margin: 0px;
+    }
+    .dashboard .navigation .nav .material p {
+        font-size: 22px;
+    }
+    .dashboard .navigation .nav .material {
+        padding-left: 150px;
+    }
+    .dashboard .navigation .nav .material_icon img {
+        width: 40px;
+        margin-right: 10px;
+    }
+    th, td {
+        font-size: 22px;
+    }
+    .foot_wrappers .note{
+        font-size: 20px;
+    }
+
+    .dashboard .navigation {
+        width: 15%;
+    }
+    .dashboard .navigation .bar{
+        width: 15%;
+    }
+    .dashboard .navigation .bar .nav .material {
+        padding-left: 45px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+    .upgrades{
+        width: 13%;
+        margin-left: 17px;
+        margin-top: 500px;
+        height: 200px;
+        border-radius: 15px;
+    }
+    .upgrades p{
+        font-size: 14px;
+        width: 60%;
+        margin-left: 40px;
+    }
+    .dashboard .navigation img.upgrade_box {
+        width: 50%;
+        height: 50%;
+        margin-top: -30px;
+    }
+    .dashboard .navigation .bar {
+        margin-top: 25px;
+    }
+    .dashboard .navigation .bar .nav {
+        margin-top: 80px;
+    }
+    .dashboard .navigation .nav .material_icon img {
+        width: 25px;
+    }
+    .dashboard .navigation .nav .material p{
+        font-size: 16px;
+    }
+    section.main{
+        width: 85%;
+    }
+    .main .search{
+        display: flex;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    .main .search h2 {
+        font-size: 22px;
+        font-weight: bolder;
+    }
+    .dashboard .main .search form {
+        margin-left: 500px;
+        margin-top: 15px;
+        width: 250px;
+    }
+    .dashboard .main .search form input{
+        height: 30px;
+        font-size: 12px;
+        padding: 10px 60px 10px 10px;
+    }
+    .dashboard .main .search form span{
+        margin-left: -35px;
+        top: auto;
+        left: auto;
+        margin-top: 5px;
+    }
+    .dashboard .main .search form span img{
+        width: 20px;
+    }
+    .material_icon1{
+        display: block;
+        float: none;
+        width: 14px;
+        margin: 0px 50px 0px 0px;
+    }
+    .dashboard .main .search div{
+        display: flex;
+        margin: 0px;
+        padding: 5px;
+        align-items: center;
+    }
+    .dashboard .main .search div .material_icon2 img {
+        width: auto;
+
+    }
+    .chart{
+        display: flex;
+        justify-content: space-around;
+    }
+    #myChart {
+        margin-right: 0px;
+        width: 80px !important;
+        height: 80px !important;
+    }
+    #myChart2{
+        margin-right: 0px;
+        width: 80px !important;
+        height: 80px !important;
+    }
+    #myChart3 {
+        margin-right: 0px;
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .chart span p{
+        font-size: 16px;
+    }
+    .chart span {
+        height: 100px;
+        width: 250px; 
+        margin: 0px;  
+    }
+    td,th{
+        font-size: 12px;
+    }
+    .table_wrapper .tables{
+        width: 1100px;
+        height: 300px;
+
+    }
+
+}
+/* .chart #mychart{
+    width: 200px;
+    height: 200px;
+} */
+/* .dashboard .navigation div .material_icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+    color: #fff;
+    background-color: rgb(14, 14, 14);
+}
+
+.dashboard .navigation div .material_icon p {
+    font-size: 30px;
+    color: #fff;
+} 
